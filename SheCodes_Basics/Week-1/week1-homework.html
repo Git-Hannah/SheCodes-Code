@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hannahs Homework SheCodes Basic Week 1</title>
+        <style>
+            body {
+                text-align: center;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            .header-emoji {
+                font-size: 40px;
+            }
+            span {
+                font-weight: bold;
+            }
+            h1 {
+                color: #1a64d6;
+                margin: 0;
+            }
+            h2 {
+                font-size: 32px;
+                font-weight: normal;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            .daily-forecast {
+                /* width: 50%; */
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 10px;
+                border-radius: 10px;
+                transition: all 0.2s ease-in-out;
+            
+            }
+            .daily-forecast:hover {
+                background-color: #fffbef;
+                
+            }
+            .daily-forecast p {
+                font-family: monospace;
+                font-size: 18px;
+                opacity: 0.7;
+            }
+            button {
+                background-color: #1a64d6;
+                color: #fff;
+                font-size: 16px;
+                border: 1px solid #1a64d6;
+                border-radius: 30px;
+                padding: 16px 20px;
+                margin: 20px auto;
+                cursor: pointer;
+                box-shadow: #F0F0F3 0px 8px 8px 0px;
+                display: block;
+                transition: all 0.2s ease;
+            }
+            button:hover {
+                background-color: #fff;
+                color: #1a64d6;
+
+            }
+            footer {
+                font-family: monospace;
+                font-size: 18px;
+                opacity: 0.7;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-emoji">🌤️</div>
+            <h1>Currently 21° in Quirm</h1>
+            <h2>13° / <span>23°</span></h2>
+        </header>
+        <main>
+            <ul>
+            <li class="daily-forecast">
+                <h3>🌧️Tomorrow</h3>
+                <p>10° / <span>22°</span></p>
+            </li>
+            <li class="daily-forecast">
+                <h3>🌥️ Saturday</h3>
+                <p>15° / <span>17°</span></p>
+            </li>
+            <li class="daily-forecast">
+                <h3>☀️ Sunday</h3>
+                <p>25° / <span>28°</span></p>
+            </li>
+            </ul>
+            <button>
+                Change city
+            </button>
+        </main>
+        <footer>
+            <p>Coded by Hannah</p>
+        </footer>
+    </body>
+</html>
