@@ -6,3 +6,9 @@
 body {
     background-color: aliceblue;
 }
+span {
+    color: blue;
+}
+em {
+    color: aquamarine;
+}
