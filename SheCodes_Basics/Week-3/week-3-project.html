@@ -7,8 +7,8 @@
         <title>Cats</title>
     </head>
     <body>
+        <div class="main-content">
         <h1>Cats</h1>
-        <div>
             <h2>Magical creatures</h2>
             <p>
                 Cats embody an enchanting mystique, weaving an irresistible
@@ -28,15 +28,53 @@
                 forever <br />
                 under their charming spell.
             </p>
+            <a href="https://en.wikipedia.org/wiki/Cat">Find out more about cats</a>
+            <button>Your cat familiar</button>
+            <hr />
+            <p>Pawed by Hannah</p>
         </div>
-        <a href="https://en.wikipedia.org/wiki/Cat">About cats</a>
-        <button>Your cat familiar</button>
-        <hr />
-        <p>Pawed by Hannah</p>
         <script>
+            function catSurvey() {
+                let zodiac = prompt("What is your zodiac sign?");
+                zodiac = zodiac
+                    .toLowerCase()
+                    .trim()
+                    .replace("sagitarius", "sagittarius");
+                if (
+                    zodiac === "aries" ||
+                    zodiac === "leo" ||
+                    zodiac === "sagittarius"
+                ) {
+                    alert("The perfect cat for you is a Ginger cat!");
+                }
+                if (
+                    zodiac === "taurus" ||
+                    zodiac === "virgo" ||
+                    zodiac === "capricorn"
+                ) {
+                    alert("The perfect cat for you is a Tabby cat!");
+                }
+                if (
+                    zodiac === "gemini" ||
+                    zodiac === "libra" ||
+                    zodiac === "aquarius"
+                ) {
+                    alert("The perfect cat for you is a White cat!");
+                }
+                if (
+                    zodiac === "cancer" ||
+                    zodiac === "scorpio" ||
+                    zodiac === "pisces"
+                ) {
+                    alert("The perfect cat for you is a Black cat!");
+                } else {
+                    alert("The perfect cat for you is a Calico cat!");
+                }
+            }
+
             let askButton = document.querySelector("button");
 
-            askButton.addEventListener("click", alert("Hello!"));
+            askButton.addEventListener("click", catSurvey);
         </script>
     </body>
 </html>
