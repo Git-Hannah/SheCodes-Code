@@ -21,3 +21,11 @@ https://codesandbox.io/s/css-flexbox-challenge-forked-4x349c?file=/index.html
 ### 7. Advanced CSS Positioning
 
 https://codesandbox.io/s/css-positioning-forked-528g6w?file=/src/styles.css
+
+### 8. Advanced Selectors in CSS
+
+https://codesandbox.io/s/css-selectors-challenge-forked-r23dy4?file=/index.html
+
+## Project CSS
+
+https://codesandbox.io/s/project-css-challenge-forked-6qvyw7?file=/src/styles.css
