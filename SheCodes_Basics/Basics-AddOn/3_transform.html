@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Transform</title>
+        <style>
+            img {
+                width: 200px;
+            }
+            .img-carribbean {
+                transform: rotate(8deg) translateX(5em);
+                transition: all 200ms ease-in;
+            }
+            .img-carribbean:hover {
+                transform: skew(40deg, 22deg);
+            }
+            .img-iceland {
+                transform: rotate(20deg) translateY(8em);
+                transition: all 900ms ease;
+            }
+            .img-iceland:hover {
+                transform: translateX(8em);
+            }
+            .img-harz {
+                transform: scale(1.2, 1.2) translateY(4em);
+            }
+            .img-cornwall {
+                transform: translate3d(42px, 60%, 6em);
+            }
+            .img-cat-country {
+                transform: skew(5deg, 5deg);
+                transition: all 2000ms ease;
+            }
+            .img-cat-country:hover {
+                transform: rotate(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <img
+            class="img-carribbean"
+            src="https://images.unsplash.com/photo-1571174215966-b271b37b6a97?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FycmliYmVhbnxlbnwwfHwwfHx8MA%3D%3D"
+            alt="St. John"
+        />
+        <img
+            class="img-iceland"
+            src="https://images.unsplash.com/photo-1506261423908-ea2559c1f24c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGljZWxhbmR8ZW58MHx8MHx8fDA%3D"
+            alt="Iceland"
+        />
+        <img
+            class="img-harz"
+            src="https://images.unsplash.com/photo-1603029210328-1e4facfb03f0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFyenxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Vielleicht Harz"
+        />
+        <img
+            class="img-cornwall"
+            src="https://images.unsplash.com/photo-1558464919-690deda1ca00?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29ybndhbGx8ZW58MHx8MHx8fDA%3D"
+            alt="Cornwall"
+        />
+        <img
+            class="img-cat-country"
+            src="https://images.unsplash.com/photo-1694184583729-6c0a1378e20c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhdCUyMGxhbmR8ZW58MHx8MHx8fDA%3D"
+            alt="cat country"
+        />
+    </body>
+</html>
