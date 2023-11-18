@@ -7,14 +7,19 @@
 
         <title>Grid</title>
         <style>
+            /* fr = fraction */
             .image-gallery {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
+                /* or write: */
+                grid-template-columns: repeat(4, 1fr);
+                /* or (4, 25%) */
                 grid-gap: 10px;
             }
 
             .image-gallery img {
-                width: 100px;
+                /* better to size grid item in % so the size can be defined in the grid container: */
+                width: 100%;
                 border-radius: 11px;
             }
         </style>
