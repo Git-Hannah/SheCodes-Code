@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Class Manipulation</title>
+        <style>
+            button {
+                background-color: black;
+                color: white;
+            }
+            .darkThemePage {
+                background-color: black;
+            }
+            .darkThemeButton {
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <!-- Note: Like DOM Manipulation! -->
+        <button>Dark Theme</button>
+        <script>
+            function turnToDark() {
+                let body = document.querySelector(".body");
+                let button = document.querySelector("button");
+                // body.classList.add
+                body.classList.toggle("darkThemePage");
+                button.classList.toggle("darkThemeButton");
+            }
+
+            let button = document.querySelector("button");
+            button.addEventListener("click", turnToDark);
+        </script>
+    </body>
+</html>
