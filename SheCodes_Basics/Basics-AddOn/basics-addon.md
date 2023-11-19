@@ -1,4 +1,6 @@
-# CSS Transform
+# Lesson 3
+
+## CSS Transform
 
 ### Function values
 
@@ -36,4 +38,30 @@ a:hover {
   opacity: 0.7;
   color: red;
 }
+```
+
+# Lesson 5
+
+## HTML Class Manipulation
+
+```
+
+<style>
+    .dark {
+      background: black;
+    }
+
+    button {
+      background: black;
+      color: white;
+    }
+```
+    Solution Video:
+    CHANGES to this style when the .dark class gets added to the body:
+```
+    .dark button {
+      background: white;
+      color: black;
+    }
+</style>
 ```
