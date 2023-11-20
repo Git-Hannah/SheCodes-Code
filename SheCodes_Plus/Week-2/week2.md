@@ -29,3 +29,6 @@ https://codesandbox.io/s/css-selectors-challenge-forked-r23dy4?file=/index.html
 ## Project CSS
 
 https://codesandbox.io/s/project-css-challenge-forked-6qvyw7?file=/src/styles.css
+
+Video Solution:
+"30px padding is very common in design, also 20px or 15px"
