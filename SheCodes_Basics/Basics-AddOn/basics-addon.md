@@ -96,5 +96,7 @@ is more elegant
 ## Grid
 
 if fotos are not the same size:
+
 object-fit
+
 ratio

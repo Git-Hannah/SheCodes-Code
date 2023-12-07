@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Honeybees</title>
-        <!-- <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="./animations.css" />
         <link rel="stylesheet" href="./grid.css" />
-        <link rel="stylesheet" href="./dark-theme.css" /> -->
+        <link rel="stylesheet" href="./dark-theme.css" />
         <style>
             /* general styles */
             body {
@@ -35,9 +35,13 @@
             }
 
             /* Container Styles */
+            h1 {
+                font-size: 38px;
+            }
             h1,
             h2 {
                 text-align: center;
+                letter-spacing: 1.8px;
             }
             p {
                 font-size: 22px;
@@ -65,6 +69,7 @@
             button {
                 display: block;
                 margin: 0 auto;
+                margin-top: 12px;
                 border: 1px solid gold;
                 background-color: #c87100;
                 color: lightgoldenrodyellow;
@@ -79,7 +84,7 @@
             }
             footer {
                 text-align: center;
-                margin: 10px 0;
+                margin: 5px 0;
                 font-size: 20px;
             }
 
@@ -92,42 +97,23 @@
             }
             .bee-intro-picture {
                 margin-top: 30px;
-                transition: all 150ms ease-in-out;
+                transition: all 450ms ease-in-out;
             }
             .bee-intro-picture:hover {
                 transform: scale(1.2);
                 filter: drop-shadow(16px 16px 40px gold) contrast(110%);
             }
-            .bee-picture-2 {
-                transition: all 200ms ease-in;
+
+            .grid img {
+                transition: all 400ms ease-in-out;
             }
-            .bee-picture-2:hover {
-                transform: rotate(3deg);
+            .grid img:hover {
+                transform: scale(1.5);
                 filter: brightness(1.1);
-            }
-            .bee-picture-3 {
-                transition: all 300ms ease-out;
-            }
-            .bee-picture-3:hover {
-                transform: translateX(40px);
-                filter: drop-shadow(-32px -6px 30px #0f2100);
-            }
-            .bee-picture-4 {
-                transition: all 400ms ease;
-            }
-            .bee-picture-4:hover {
-                transform: rotate(2turn);
-                filter: hue-rotate(90deg);
-            }
-            .bee-picture-5 {
-                transition: all 400ms ease;
-            }
-            .bee-picture-5:hover {
-                transform: scale(0.9);
-                filter: saturate(30%);
+                filter: drop-shadow(10px 10px 20px gold) contrast(110%);
             }
 
-            /* grid */
+            /* grid styles */
             .grid {
                 display: grid;
                 /* grid-template-columns: repeat(2, 300px); */
@@ -137,13 +123,9 @@
             }
             .grid img {
                 width: 100%;
-                transition: all 200ms ease-in-out;
-            }
-            .grid img:hover {
-                transform: scale(1.5);
             }
 
-            /* dark theme */
+            /* dark theme styles */
             .dark {
                 background-color: rgb(67, 49, 1);
                 color: gold;
@@ -220,11 +202,11 @@
             <a href="https://en.wikipedia.org/wiki/Honey_bee"
                 >📖 read more on wikipedia</a
             >
-            <!-- <button>Meet the bees</button> -->
+            <button id="meetBeesButton">Meet the bees</button>
         </div>
         <footer>
             <p>
-                Coded by busy🐝bee
+                Coded with HTML, CSS & JavaScript by busy🐝bee
                 <a href="https://github.com/Git-Hannah"> Hannah </a>
             </p>
         </footer>
@@ -233,12 +215,6 @@
                 let body = document.querySelector("body");
                 body.classList.toggle("dark");
 
-                // if (body.classList.contains("dark")) {
-                //     body.classList.remove("dark");
-                // } else {
-                //     body.classList.add("dark");
-                // }
-
                 if (body.classList.contains("dark")) {
                     themeButton.innerHTML = "Bee day";
                 } else {
@@ -246,8 +222,24 @@
                 }
             }
 
+            function beeQuestions() {
+                let honeyQuestion = prompt("Do you like honey?");
+                honeyQuestion = honeyQuestion.toLowerCase().trim();
+
+                if (honeyQuestion === "yes") {
+                    alert("Sweet! Honey is the result of relentless teamwork");
+                    // prompt("Would you like to meet the honeymakers?");
+                } else {
+                    alert(
+                        "Then you might like the fact that bees keep the world alive"
+                    );
+                }
+            }
             let themeButton = document.querySelector(".darkThemeButton");
             themeButton.addEventListener("click", changeTheme);
+
+            let meetBeesButton = document.querySelector("#meetBeesButton");
+            meetBeesButton.addEventListener("click", beeQuestions);
         </script>
     </body>
 </html>

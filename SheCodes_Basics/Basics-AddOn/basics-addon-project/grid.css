@@ -7,8 +7,4 @@
 }
 .grid img {
     width: 100%;
-    transition: all 200ms ease-in-out;
-}
-.grid img:hover {
-    transform: scale(1.5);
 }
