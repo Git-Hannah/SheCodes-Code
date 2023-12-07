@@ -27,8 +27,9 @@ transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
 
 ## Transitions
 
-Syntax: 
+Syntax:
 transition: PROPERTY||all time way;
+
 ```
 a {
   transition: all 200ms ease;
@@ -74,7 +75,7 @@ Transition Opacity will be applied to all, and may look bad when the transition 
 
 # Lesson 9
 
-Animations:
+## Animations:
 
 :hover instead of
 
@@ -89,3 +90,11 @@ filter:contrast()
 ```
 
 is more elegant
+
+# Lesson 10
+
+## Grid
+
+if fotos are not the same size:
+object-fit
+ratio
