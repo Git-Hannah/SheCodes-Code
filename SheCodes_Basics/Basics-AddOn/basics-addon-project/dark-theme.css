@@ -1,0 +1,29 @@
+.dark {
+    background-color: rgb(67, 49, 1);
+    color: gold;
+    background: radial-gradient(
+        circle at 10% 20%,
+        #c87100 0%,
+        rgb(67, 49, 1) 90%
+    );
+    background: radial-gradient(
+        circle at 10% 20%,
+        rgb(36, 45, 57) 11.2%,
+        rgb(0, 0, 0) 98.6%
+    );
+}
+.dark a {
+    color: rgb(225, 191, 2);
+}
+.dark .darkThemeButton {
+    background-color: wheat;
+    color: darkgoldenrod;
+}
+.dark .darkThemeButton:hover {
+    background-color: #c87100;
+    color: wheat;
+}
+.dark button {
+    background-color: goldenrod;
+    color: rgb(67, 49, 1);
+}

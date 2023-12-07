@@ -4,9 +4,176 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Honeybees</title>
-        <link rel="stylesheet" href="./style.css" />
+        <!-- <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="./animations.css" />
         <link rel="stylesheet" href="./grid.css" />
+        <link rel="stylesheet" href="./dark-theme.css" /> -->
+        <style>
+            /* general styles */
+            body {
+                background-color: lightgoldenrodyellow;
+                color: rgb(67, 49, 1);
+                background: radial-gradient(
+                    circle at 10% 20%,
+                    lightgoldenrodyellow 0%,
+                    gold 90%
+                );
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* filter: opacity(0.1); */
+            }
+            .darkThemeButton {
+                background-color: #c87100;
+                font-size: 14px;
+                color: wheat;
+                padding: 8px 12px;
+                margin-bottom: 10px;
+            }
+            .darkThemeButton:hover {
+                background-color: wheat;
+                color: #c87100;
+            }
+
+            /* Container Styles */
+            h1,
+            h2 {
+                text-align: center;
+            }
+            p {
+                font-size: 22px;
+                line-height: 1.5;
+                font-family: Georgia, "Times New Roman", Times, serif;
+            }
+            a {
+                color: rgb(155, 132, 3);
+                text-decoration: overline;
+            }
+            .container a {
+                font-size: 20px;
+            }
+            a:hover {
+                text-transform: uppercase;
+            }
+            .container {
+                background-color: rgba(255, 217, 0, 0.2);
+                border: 1px dotted rgb(255, 217, 0);
+                margin: 5px auto;
+                max-width: 600px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            button {
+                display: block;
+                margin: 0 auto;
+                border: 1px solid gold;
+                background-color: #c87100;
+                color: lightgoldenrodyellow;
+                font-size: 24px;
+                border-radius: 6px;
+                padding: 10px 15px;
+                transition: all 150ms ease-in-out;
+            }
+            button:hover {
+                background-color: gold;
+                cursor: pointer;
+            }
+            footer {
+                text-align: center;
+                margin: 10px 0;
+                font-size: 20px;
+            }
+
+            /* animations */
+            /* Image animations */
+            img {
+                max-width: 100%;
+                border-radius: 12px;
+                margin: 5px 0;
+            }
+            .bee-intro-picture {
+                margin-top: 30px;
+                transition: all 150ms ease-in-out;
+            }
+            .bee-intro-picture:hover {
+                transform: scale(1.2);
+                filter: drop-shadow(16px 16px 40px gold) contrast(110%);
+            }
+            .bee-picture-2 {
+                transition: all 200ms ease-in;
+            }
+            .bee-picture-2:hover {
+                transform: rotate(3deg);
+                filter: brightness(1.1);
+            }
+            .bee-picture-3 {
+                transition: all 300ms ease-out;
+            }
+            .bee-picture-3:hover {
+                transform: translateX(40px);
+                filter: drop-shadow(-32px -6px 30px #0f2100);
+            }
+            .bee-picture-4 {
+                transition: all 400ms ease;
+            }
+            .bee-picture-4:hover {
+                transform: rotate(2turn);
+                filter: hue-rotate(90deg);
+            }
+            .bee-picture-5 {
+                transition: all 400ms ease;
+            }
+            .bee-picture-5:hover {
+                transform: scale(0.9);
+                filter: saturate(30%);
+            }
+
+            /* grid */
+            .grid {
+                display: grid;
+                /* grid-template-columns: repeat(2, 300px); */
+                /* grid-template-columns: 300px 300px; */
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+            .grid img {
+                width: 100%;
+                transition: all 200ms ease-in-out;
+            }
+            .grid img:hover {
+                transform: scale(1.5);
+            }
+
+            /* dark theme */
+            .dark {
+                background-color: rgb(67, 49, 1);
+                color: gold;
+                background: radial-gradient(
+                    circle at 10% 20%,
+                    #c87100 0%,
+                    rgb(67, 49, 1) 90%
+                );
+                background: radial-gradient(
+                    circle at 10% 20%,
+                    rgb(36, 45, 57) 11.2%,
+                    rgb(0, 0, 0) 98.6%
+                );
+            }
+            .dark a {
+                color: rgb(225, 191, 2);
+            }
+            .dark .darkThemeButton {
+                background-color: wheat;
+                color: darkgoldenrod;
+            }
+            .dark .darkThemeButton:hover {
+                background-color: #c87100;
+                color: wheat;
+            }
+            .dark button {
+                background-color: goldenrod;
+                color: rgb(67, 49, 1);
+            }
+        </style>
     </head>
     <body>
         <button class="darkThemeButton">Bee night</button>
@@ -51,9 +218,9 @@
                 amazing how these tiny creatures make our world so much sweeter.
             </p>
             <a href="https://en.wikipedia.org/wiki/Honey_bee"
-                >📖 Read More on Wikipedia</a
+                >📖 read more on wikipedia</a
             >
-            <button>Meet the bees</button>
+            <!-- <button>Meet the bees</button> -->
         </div>
         <footer>
             <p>
@@ -61,5 +228,26 @@
                 <a href="https://github.com/Git-Hannah"> Hannah </a>
             </p>
         </footer>
+        <script>
+            function changeTheme() {
+                let body = document.querySelector("body");
+                body.classList.toggle("dark");
+
+                // if (body.classList.contains("dark")) {
+                //     body.classList.remove("dark");
+                // } else {
+                //     body.classList.add("dark");
+                // }
+
+                if (body.classList.contains("dark")) {
+                    themeButton.innerHTML = "Bee day";
+                } else {
+                    themeButton.innerHTML = "Bee night";
+                }
+            }
+
+            let themeButton = document.querySelector(".darkThemeButton");
+            themeButton.addEventListener("click", changeTheme);
+        </script>
     </body>
 </html>

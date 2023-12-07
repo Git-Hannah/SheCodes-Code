@@ -1,15 +1,25 @@
 body {
     background-color: lightgoldenrodyellow;
+    color: rgb(67, 49, 1);
+    background: radial-gradient(
+        circle at 10% 20%,
+        lightgoldenrodyellow 0%,
+        gold 90%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: opacity(0.1); */
 }
 .darkThemeButton {
-    background-color: darkgoldenrod;
-    font-size: 12px;
+    background-color: #C87100;
+    font-size: 14px;
     color: wheat;
-    padding: 5px 8px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
 }
 .darkThemeButton:hover {
     background-color: wheat;
-    color: darkgoldenrod;
+    color: #C87100;
 }
 
 /* Container Styles */
@@ -22,8 +32,19 @@ p {
     line-height: 1.5;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
+a {
+    color: rgb(155, 132, 3);
+    text-decoration: overline;
+}
+.container a {
+    font-size: 20px;
+}
+a:hover {
+    text-transform: uppercase;
+}
 .container {
     background-color: rgba(255, 217, 0, 0.2);
+    border: 1px dotted rgb(255, 217, 0);
     margin: 5px auto;
     max-width: 600px;
     padding: 20px;
@@ -33,7 +54,8 @@ button {
     display: block;
     margin: 0 auto;
     border: 1px solid gold;
-    background-color: white;
+    background-color: #C87100;
+    color: lightgoldenrodyellow;
     font-size: 24px;
     border-radius: 6px;
     padding: 10px 15px;
