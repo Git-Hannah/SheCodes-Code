@@ -1,0 +1,93 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+.darkThemeButton {
+    background-color: darkgoldenrod;
+    font-size: 12px;
+    color: wheat;
+    padding: 5px 8px;
+}
+.darkThemeButton:hover {
+    background-color: wheat;
+    color: darkgoldenrod;
+}
+h1,
+h2 {
+    text-align: center;
+}
+/* Image Styles */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 5px 0;
+}
+.bee-intro-picture {
+    margin-top: 30px;
+    transition: all 150ms ease-in-out;
+}
+.bee-intro-picture:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(16px 16px 40px gold) contrast(110%);
+}
+.bee-picture-2 {
+    transition: all 200ms ease-in;
+}
+.bee-picture-2:hover {
+    transform: rotate(3deg);
+    filter: brightness(1.1);
+}
+.bee-picture-3 {
+    transition: all 300ms ease-out;
+}
+.bee-picture-3:hover {
+    transform: translateX(40px);
+    filter: drop-shadow(-32px -6px 30px #0f2100);
+}
+.bee-picture-4 {
+    transition: all 400ms ease;
+}
+.bee-picture-4:hover {
+    transform: rotate(2turn);
+    filter: hue-rotate(90deg);
+}
+.bee-picture-5 {
+    transition: all 400ms ease;
+}
+.bee-picture-5:hover {
+    transform: scale(0.9);
+    filter: saturate(30%);
+}
+.bee-picture-6 {
+    transition: all 300ms ease-out;
+}
+.bee-picture-6:hover {
+    transform: rotate(3turn) scale(1.5);
+    filter: sepia(60%);
+}
+/* Container Styles */
+.container {
+    background-color: rgba(255, 217, 0, 0.2);
+    margin: 5px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid gold;
+    background-color: white;
+    font-size: 24px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: all 150ms ease-in-out;
+}
+button:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}

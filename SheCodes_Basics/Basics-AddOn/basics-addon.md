@@ -27,6 +27,8 @@ transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
 
 ## Transitions
 
+Syntax: 
+transition: PROPERTY||all time way;
 ```
 a {
   transition: all 200ms ease;
@@ -39,6 +41,8 @@ a:hover {
   color: red;
 }
 ```
+
+Transition Opacity will be applied to all, and may look bad when the transition enlarges the object and covers another, which then will be visible behing (See final project video "Animations" Lesson 9)
 
 # Lesson 5
 
@@ -56,8 +60,10 @@ a:hover {
       color: white;
     }
 ```
+
     Solution Video:
     CHANGES to this style when the .dark class gets added to the body:
+
 ```
     .dark button {
       background: white;
@@ -65,3 +71,21 @@ a:hover {
     }
 </style>
 ```
+
+# Lesson 9
+
+Animations:
+
+:hover instead of
+
+```
+transition: opacity
+```
+
+use
+
+```
+filter:contrast()
+```
+
+is more elegant
