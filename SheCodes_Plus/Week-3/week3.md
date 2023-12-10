@@ -16,3 +16,10 @@ https://codesandbox.io/p/sandbox/js-arrrays-forked-vyy6jh?file=%2Fsrc%2Findex.js
 
 option + 5 [[[[[[[]]]]]]]
 
+### 6. JS Objects
+
+https://codesandbox.io/p/sandbox/javascript-objects-forked-ctmt4z?file=%2Fsrc%2Findex.js
+
+### 7. JS Arrays vs Objects
+
+https://codesandbox.io/p/sandbox/javascript-arrays-vs-objects-challenge-forked-x9ppy4?file=%2Fsrc%2Findex.js
