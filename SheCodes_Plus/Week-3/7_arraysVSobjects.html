@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arrays vs Objects</title>
+    </head>
+    <body>
+        <script>
+            let paris = {
+                name: "Paris",
+                country: "France",
+                language: "French",
+                temperature: 18,
+                capitalCity: true,
+            };
+
+            // 1
+            console.log(paris.temperature);
+
+            // 2
+            let sydney = {
+                name: "Sydney",
+                country: "Australia",
+                language: "English",
+                temperature: 25,
+                capitalCity: false,
+            };
+            console.log(sydney.temperature);
+
+            // 3
+
+            let citiesAustralia = ["Canberra", "Melbourne", "Ballarat"];
+            console.log(citiesAustralia[0]);
+            console.log(citiesAustralia[1]);
+            console.log(citiesAustralia[2]);
+
+            // 4
+            let cities = [
+                {
+                    name: "Sydney",
+                    country: "Australia",
+                    language: "English",
+                    temperature: 25,
+                    capitalCity: false,
+                },
+                {
+                    name: "Melbourne",
+                    country: "Australia",
+                    language: "English",
+                    temperature: 23,
+                    capitalCity: false,
+                },
+                {
+                    name: "Ballarat",
+                    country: "Australia",
+                    language: "English",
+                    temperature: 22,
+                    capitalCity: false,
+                },
+            ];
+
+            console.log(cities[0].temperature);
+            console.log(cities[1].temperature);
+            console.log(cities[2].temperature);
+        </script>
+    </body>
+</html>
