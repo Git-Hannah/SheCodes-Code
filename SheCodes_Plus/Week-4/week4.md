@@ -14,3 +14,6 @@ https://codesandbox.io/p/sandbox/js-functions-params-forked-p7f4dq?file=%2Fsrc%2
 
 https://codesandbox.io/p/sandbox/js-functions-return-forked-vzk5zr?file=%2Fsrc%2Findex.js
 
+### 6. JS Dates
+
+https://codesandbox.io/p/sandbox/javascript-dates-forked-cnmy96?file=%2Fsrc%2Findex.js
