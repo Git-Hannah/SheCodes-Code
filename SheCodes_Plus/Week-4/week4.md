@@ -22,3 +22,4 @@ https://codesandbox.io/p/sandbox/javascript-dates-forked-cnmy96?file=%2Fsrc%2Fin
 
 https://codesandbox.io/p/sandbox/js-selectors-forked-9y2v97?file=%2Fsrc%2Findex.js
 
+### 8. JS Events
