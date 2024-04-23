@@ -10,6 +10,11 @@ https://codesandbox.io/p/sandbox/js-functions-forked-q5p2rr?file=%2Fsrc%2Findex.
 
 https://codesandbox.io/p/sandbox/js-functions-params-forked-p7f4dq?file=%2Fsrc%2Findex.js
 
+### 4. JS Debugging
+https://www.shecodes.io/learn/cohorts/1761/units/27/lessons/165
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger
+
 ### 5. JS Functions Return
 
 https://codesandbox.io/p/sandbox/js-functions-return-forked-vzk5zr?file=%2Fsrc%2Findex.js
@@ -29,3 +34,7 @@ https://codesandbox.io/p/sandbox/js-events-forked-t95spv?file=%2Fsrc%2Findex.js%
 ### 9. JS Forms
 
 https://codesandbox.io/p/sandbox/forms-forked-5jy464?file=%2Fsrc%2Findex.js%3A1%2C5
+
+## HTML/CSS to JS homework
+
+https://codesandbox.io/p/sandbox/html-css-to-js-challenge-forked-zlww5n?file=%2Fsrc%2Findex.js
